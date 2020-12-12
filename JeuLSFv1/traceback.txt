@@ -1,0 +1,44 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+After initialization, but before game start.
+  File "game/MyScreens-Images.rpy", line 1, in prepare_screen
+    screen minimapShow:
+  File "game/MyScreens-Images.rpy", line 1, in prepare
+    screen minimapShow:
+  File "game/MyScreens-Images.rpy", line 2, in prepare
+    imagebutton:
+  File "game/MyScreens-Images.rpy", line 2, in prepare
+    imagebutton:
+SyntaxError: invalid syntax (game/MyScreens-Images.rpy, line 5)
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "C:\Users\guill\Downloads\Application\Ren'py\renpy-7.3.5-sdk\renpy\bootstrap.py", line 316, in bootstrap
+    renpy.main.main()
+  File "C:\Users\guill\Downloads\Application\Ren'py\renpy-7.3.5-sdk\renpy\main.py", line 578, in main
+    run(restart)
+  File "C:\Users\guill\Downloads\Application\Ren'py\renpy-7.3.5-sdk\renpy\main.py", line 94, in run
+    renpy.display.screen.prepare_screens()
+  File "C:\Users\guill\Downloads\Application\Ren'py\renpy-7.3.5-sdk\renpy\display\screen.py", line 931, in prepare_screens
+    s.ast.prepare_screen()
+  File "game/MyScreens-Images.rpy", line 1, in prepare_screen
+    screen minimapShow:
+  File "game/MyScreens-Images.rpy", line 1, in prepare
+    screen minimapShow:
+  File "game/MyScreens-Images.rpy", line 2, in prepare
+    imagebutton:
+  File "game/MyScreens-Images.rpy", line 2, in prepare
+    imagebutton:
+  File "C:\Users\guill\Downloads\Application\Ren'py\renpy-7.3.5-sdk\renpy\pyanalysis.py", line 703, in ast_eval
+    return self.ast_eval_literal(expr)[0]
+  File "C:\Users\guill\Downloads\Application\Ren'py\renpy-7.3.5-sdk\renpy\pyanalysis.py", line 687, in ast_eval_literal
+    expr = py_compile(expr, 'eval', ast_node=True)
+  File "C:\Users\guill\Downloads\Application\Ren'py\renpy-7.3.5-sdk\renpy\python.py", line 692, in py_compile
+    raise e
+SyntaxError: invalid syntax (game/MyScreens-Images.rpy, line 5)
+
+Windows-8-6.2.9200
+Ren'Py 7.3.5.606
+JeuLSFv1 1.0
+Wed Dec 09 16:15:12 2020
