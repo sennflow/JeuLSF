@@ -7,7 +7,6 @@ label start:
     scene Salle1
     show screen minimapShow
 
-    m "Le github fonctionne"
     m "je m'appele michel"
     m "après ce message ce sera la salle 2"
     label Salle2:
