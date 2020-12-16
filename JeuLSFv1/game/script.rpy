@@ -11,6 +11,7 @@ label start:
     m "VScode pas forcément pratique mais comme ça on peut test tous ensemble"
     m "je m'appele michel"
     m "après ce message ce sera la salle 2"
+    m "Test Sofiane"
     label Salle2:
     $ minimap.append(salle2)
     scene Salle2
