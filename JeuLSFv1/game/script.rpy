@@ -1,6 +1,5 @@
 label start:
     $ minimap = []
-    "cc"
     $ salle1 = Room("Salle1","Salle1.png", 60, 60, 1)
     $ salle2 = Room("Salle2","Salle2.png", 400, 230, 2)
     label Salle1:
