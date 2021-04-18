@@ -8,6 +8,7 @@ label start:
     label Blackscreen1:
     show BlackScreen at sizeBackground
     jump miniJeuFiole
+    play music "<loop 0.0>/audio/ForetBruitOiseau.mp3"
     "Comme à votre habitude, vous vous baladez dans la forêt. Le soleil brille comme toujours, mais cette fois-ci, vous sentez une légère brise tout à fait différente..."
     label Perdu1:
     show Perdu1 at sizeBackground with slowDissolve
@@ -18,6 +19,8 @@ label start:
     jump WaitingScreen
     
     label Perdu2:
+    stop music
+    play music "<loop 0.0>/audio/Foret.mp3"
     scene Perdu2 at sizeBackground with slowDissolve
     show screen Perdu2ToPerdu3 with slowDissolve
     jump WaitingScreen
@@ -142,6 +145,7 @@ label start:
         nom = nom.strip() or "Anonyme"
     o "Bienvenue dans cette forêt pas tout à fait ordinaire [nom], Je me fait appeler Oliveau"
     $ renpy.movie_cutscene("Videos/oliveau_oliveau_LSF.webm")
+    play music "<loop 0.0>/audio/Oliveau.mp3"
     if achOLIVEAU==0:
         show achOLIVEAU at Tachievement onlayer overlay
         $ achievements.append(Lettre_OLIVEAU)
@@ -231,6 +235,8 @@ label start:
     jump ClairiereDOliveau
 
     label LieuDuVolComplete:
+    stop music
+    play music "<loop 0.0>/audio/Oliveau.mp3"
     o "Est-ce qu’il y a quelque chose que tu souhaites savoir?"
     menu:
         "Parmis les lettres que l’on m’a signées, il y en a une que j’ai mal comprise":
@@ -317,6 +323,8 @@ label start:
     
 #############################################################################################################################
     label PorteDuRoyaumeDesFees:
+    stop music
+    play music "<loop 0.0>/audio/ForetBruitOiseau.mp3"
     #IntroLabel
     $ minimap.append(PorteDuRoyaumeDesFees)
     scene PorteDuRoyaumeDesFees at sizeBackground with slowDissolve
